@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <meta name="description" content="Busca CEP utilizando o framework VueJS" />
+    <meta name="keywords" content="VueJS, buscaCEP, framework javascript" />
+    <meta name="author" content="Niag de Souza Alves" />
+    <meta name="robots" content="index, follow" />
+    <link rel="icon" href="assets/img/Vue.js_Logo.png" type="image/jpg" />
+    <link rel="canonical" href="https://github.com/niagsouza" />
+
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Busca CEP - VueJS</title>
+</head>
+
+<body>
+    <div id="app">
+        <section class="cep">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h1>Busca CEP - VueJS </h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2">
+                        <div class="form-group">
+                            <label>CEP:</label>
+                            <input type="text" name="cep" v-model="cep" value="" maxlength="8" class="form-control" v-on:change="buscaCep" />
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="form-group">
+                            <label>Logradouro:</label>
+                            <input type="text" name="logradouro" value="" v-model="logradouro" class="form-control" />
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="form-group">
+                            <label>Complemento:</label>
+                            <input type="text" name="complemento" value="" v-model="complemento" class="form-control" />
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="form-group">
+                            <label>Número:</label>
+                            <input type="number" name="num" v-model="num" value="" class="form-control" />
+                        </div>
+                    </div>
+
+                    <div class="col-md-5">
+                        <div class="form-group">
+                            <label>Bairro:</label>
+                            <input type="text" name="bairro" value="" v-model="bairro" class="form-control" />
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="form-group">
+                            <label>Cidade:</label>
+                            <input type="text" name="cidade" value="" v-model="cidade" class="form-control" />
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="form-group">
+                            <label>Estado:</label>
+                            <input type="text" name="estado" value="" v-model="estado" class="form-control" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <p class="text-center">O código do projeto está disponível <a href="https://github.com/niagsouza/buscacep-vuejs" target="_blank">aqui</a></p>
+
+
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+
+</body>
+
+</html>
