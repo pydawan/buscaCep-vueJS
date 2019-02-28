@@ -5,6 +5,4 @@ Primeiro projeto realizado com VueJS no qual estou consumindo a api [ViaCEP](htt
 Nesse projeto foi utilizado as seguintes ferramentas:
 
 
-[ViaCEP](https://viacep.com.br/)
-[Axios](https://github.com/axios/axios)
-[VueJS](https://vuejs.org/)
+[ViaCEP](https://viacep.com.br/) / [Axios](https://github.com/axios/axios) / [VueJS](https://vuejs.org/)
